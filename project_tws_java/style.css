@@ -1,0 +1,16 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#navbar, #tretia{
+    background-color: #222831;
+}
+#carusel, #cards{
+    background-color: #393E46;
+    
+}
+#neparny{
+    background-color: #00ADB5;
+}
+#parny{
+    background-color: #393E46;
+}

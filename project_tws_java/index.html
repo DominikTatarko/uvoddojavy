@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap Project</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid text-center" id="navbar">
+        <div class="row">
+          <nav
+            id="nav-bar-example2"
+            class="navbar navbar-expand-lg bs-light ps-5"
+          >
+            <div class="container-fluid">
+              <a class="navbar-brand text-light" href="#"
+                ><img src="logo.png" width="50px" alt="logo"
+              /></a>
+              <button
+                class="navbar-toggler bg-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light"
+                      aria-current="page"
+                      href="#scrollspyHeading1"
+                      >Úvod</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#scrollspyHeading2"
+                      >Výhody</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#scrollspyHeading3"
+                      >Eclipse</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle text-light"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Zaklady Programovania
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#scrollspyHeading4"
+                          >Premenné a datové typy</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#scrollspyHeading5"
+                          >Operatory</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#scrollspyHeading6"
+                          >if-else</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#scrollspyHeading7"
+                          >for cyklus</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#scrollspyHeading8"
+                      >Úlohy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="container-fluid" id="carusel">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide text-centered"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="foto-carusel 1.jpg"
+                class="mx-auto d-block img-fluid m-3"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="foto-carusel 2.jpg"
+                class="mx-auto d-block img-fluid m-3"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="carusel-photo 3.jpg"
+                class="mx-auto d-block img-fluid m-3"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="m-3" id="neparny">
+      <div class="container-fluid">
+        <div class="row p-5">
+          <div class="col d-flex justify-content-center"><h1>ÚVOD</h1></div>
+        </div>
+      </div>
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p class="fs-5 p-2 m-2 rounded text-light" id="cards">
+              Java, od svojho zrodu v roku 1995, zaujíma vývojárov svojou
+              všestrannosťou a schopnosťou ponúkať jednoduché riešenia pre
+              komplexné vývojové úlohy. Vytvorená spoločnosťou Sun Microsystems
+              s cieľom prekonať obmedzenia existujúcich programovacích jazykov,
+              Java sa stala synonymom pre platformovú nezávislosť a bezpečný
+              vývoj.
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <p class="fs-5 p-2 m-2 rounded text-light" id="cards">
+              Java Virtual Machine (JVM) stojí v srdci tohto jazyka, umožňujúc
+              aplikáciám bežať na rôznych operačných systémoch bez straty
+              výkonu. Táto jedinečná vlastnosť uvoľňuje vývojárov od starostí o
+              hardvérové špecifikácie, čím umožňuje vytvárať aplikácie, ktoré sú
+              prenositeľné a ľahko spraviteľné.
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <p class="fs-5 p-2 m-2 rounded text-light" id="cards">
+              V oblasti objektovo-orientovaného programovania je Java príkladom
+              elegancie a jednoduchosti. Jej syntax je intuitívna a ľahko sa
+              naučí, čo uľahčuje novým vývojárom vstup do sveta programovania.
+              Zároveň však poskytuje pokročilé možnosti pre skúsených
+              programátorov, čím zabezpečuje univerzálnosť pre rôzne úrovne
+              skúseností.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-3" id="parny">
+      <div class="container-fluid">
+        <div class="row p-5">
+          <div class="col d-flex justify-content-center">
+            <h1 class="text-light">VÝHODY</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <ol class="list-group p-2 m-2">
+              <li class="list-group-item m-2 rounded text-light" id="neparny">
+                1.Platformová Nezávislosť: Java je navrhnutá tak, aby bola
+                schopná bežať na rôznych platformách s pomocou Java Virtual
+                Machine (JVM), čo umožňuje prenositeľnosť kódu bez nutnosti
+                opätovnej kompilácie.
+              </li>
+              <li class="list-group-item m-2 rounded text-light" id="neparny">
+                2.Objektovo-Orientovaný Prístup: Java je plne
+                objektovo-orientovaný jazyk, čo zjednodušuje návrh a
+                implementáciu softvéru, a zároveň podporuje modulárny a
+                udržateľný kód.
+              </li>
+              <li class="list-group-item m-2 rounded text-light" id="neparny">
+                3.Rozsiahla Knižnica a Framework Ekosystém: Java disponuje
+                veľkým množstvom štandardných knižníc a frameworkov, ako
+                napríklad Java Standard Edition (SE) a Java Enterprise Edition
+                (EE), čo zjednodušuje vývoj a zrýchľuje proces tvorby aplikácií.
+              </li>
+              <li class="list-group-item m-2 rounded text-light" id="neparny">
+                4.Bezpečnosť: Jazyk Java má zabudované bezpečnostné mechanizmy,
+                ako napríklad bezpečnostné vrstvy v JVM a systémy riadenia
+                prístupu, ktoré chránia aplikácie pred rôznymi hrozbami.
+              </li>
+              <li class="list-group-item m-2 rounded text-light" id="neparny">
+                5.Široké Použitie: Java nájdeme v rôznych oblastiach vývoja,
+                vrátane mobilného vývoja (Android), serverových aplikácií,
+                webových aplikácií, veľkých podnikových systémov a vložených
+                zariadení.
+              </li>
+            </ol>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <ol class="list-group p-2 m-2">
+              <li class="list-group-item m-2 rounded text-light" id="neparny">
+                6.Multi-Threaded Podpora: Java poskytuje zabudovanú podporu pre
+                viacvláknové programovanie, čo umožňuje efektívne využívať
+                výpočtový výkon moderných viacjadrových systémov.
+              </li>
+              <li class="list-group-item m-2 rounded text-light" id="neparny">
+                7.Automatické Riadenie Pamäte: Java používa automatický garbage
+                collector, čo eliminuje potrebu manuálneho riadenia pamäte a
+                pomáha zabrániť únikom pamäte.
+              </li>
+              <li class="list-group-item m-2 rounded text-light" id="neparny">
+                8.Jednoduchá Naučiteľnosť: Syntax jazyka Java je považovaná za
+                jednoduchú a intuitívnu, čo uľahčuje novým vývojárom vstup do
+                programovania.
+              </li>
+              <li class="list-group-item m-2 rounded text-light" id="neparny">
+                9.Komunitná Podpora: Java má veľkú a aktívnu komunitu vývojárov,
+                ktorá znamená dostupnosť bohatého zdroja dokumentácie,
+                tutoriálov a diskusných fór.
+              </li>
+              <li class="list-group-item m-2 rounded text-light" id="neparny">
+                10.Stabilná a Vyspelá Platforma: Java má dlhú históriu a je
+                dobre etablovaná, čo znamená, že poskytuje stabilnú a vyspelú
+                platformu pre vývoj, s pravidelnými aktualizáciami a podporou zo
+                strany spoločnosti Oracle.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-3" id="neparny">
+      <div class="container-fluid">
+        <div class="row p-5">
+          <div class="col d-flex justify-content-center">
+            <h1>ECLIPSE</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-8 col-md-12">
+            <div class="fs-5 row p-4 m-2 rounded text-light" id="cards">
+              <p class="rounded">
+                Eclipse je výkonné integrované vývojové prostredie (IDE), ktoré
+                podporuje tvorbu a úpravu kódu v rôznych programovacích
+                jazykoch. Jeho univerzálnosť umožňuje prácu s rôznymi
+                technológiami, vrátane Javy, C++, Pythonu a ďalších. Vďaka
+                rozšíriteľnosti a pluginom je prispôsobiteľné potrebám
+                vývojárov. Eclipse ponúka integrovanú podporu pre verzovacie
+                systémy, čo uľahčuje sledovanie zmien v kóde a spoluprácu v
+                tíme. S nástrojmi na refaktoring a rýchlym vyhľadávaním zlepšuje
+                kvalitu kódu. Prispôsobiteľné rozhranie umožňuje individuálne
+                nastavenie pracovného prostredia. Jeho silné stránky sú
+                viditeľné aj v podpore rôznych technológií, frameworkov a
+                platforiem. Aktívna komunita vývojárov zabezpečuje pravidelné
+                aktualizácie a pridávanie nových funkcií, čím Eclipse zostáva
+                spoľahlivým a výkonným nástrojom pre rozmanité vývojové
+                projekty.
+              </p>
+            </div>
+            <div class="row p-4 m-2 rounded text-light" id="cards">
+              <h1 class="rounded">
+                Link na stiahnutie
+                <a href="https://www.eclipse.org/downloads/packages/installer"
+                  >JE TU!!!</a
+                >
+              </h1>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 text-center">
+            <img src="eclipse.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-3" id="parny">
+      <div class="container-fluid">
+        <div class="row p-5">
+          <div class="col d-flex justify-content-center">
+            <h1 class="text-light">PREMENNÉ A DATOVÉ TYPY</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="container">
+            <p class="text-light">
+              Premenné sú kontajnery na ukladanie údajových hodnôt.
+            </p>
+            <p class="text-light">
+              V jazyku Java existujú rôzne typy premenných, napríklad:
+            </p>
+          </div>
+          <div class="container">
+            <ul class="list-group list-group-flush rounded">
+              <li class="list-group-item text-light" id="neparny">
+                String- ukladá text, napríklad „Ahoj“. Hodnoty reťazcov sú
+                ohraničené dvojitými úvodzovkami
+              </li>
+              <li class="list-group-item text-light" id="neparny">
+                int- ukladá celé čísla (celé čísla) bez desatinných miest,
+                napríklad 123 alebo -123
+              </li>
+              <li class="list-group-item text-light" id="neparny">
+                float- ukladá čísla s pohyblivou rádovou čiarkou s desatinnými
+                miestami, napríklad 19,99 alebo -19,99
+              </li>
+              <li class="list-group-item text-light" id="neparny">
+                char- ukladá jednotlivé znaky, ako napríklad 'a' alebo 'B'.
+                Hodnoty znakov sú ohraničené jednoduchými úvodzovkami
+              </li>
+              <li class="list-group-item text-light" id="neparny">
+                boolean- ukladá hodnoty s dvoma stavmi: true alebo false
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <h1 class="p-2 text-light">SYNTAX</h1>
+          <div class="col-10 ms-3 mb-3 p-3 rounded text-light" id="neparny">
+            type variableName = value;
+          </div>
+        </div>
+        <div class="row">
+          <h1 class="text-light">Príklad</h1>
+          <p class="text-light">
+            Vytvorte premennú s názvom name of type Stringa priraďte jej hodnotu
+            „ John “:
+          </p>
+          <div class="col-10 ms-3 mb-3 p-3 rounded text-light" id="neparny">
+            <p>
+              String name = "John";<br />
+              System.out.println(name);
+            </p>
+            <button
+              id="parny"
+              type="button"
+              class="btn btn-secondary"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              data-bs-content="x is greater than y"
+            >
+              Výstup
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-3" id="neparny">
+      <div class="container-fluid">
+        <div class="row p-5">
+          <div class="col d-flex justify-content-center">
+            <h1>OPERÁTORY</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <p>
+            Operátory sa používajú na vykonávanie operácií s premennými a
+            hodnotami.
+          </p>
+          <p>
+            V nižšie uvedenom príklade používame + operátor na sčítanie dvoch
+            hodnôt:
+          </p>
+        </div>
+        <div class="row">
+          <h1>Príklad</h1>
+          <div class="col-10 ms-3 mb-3 p-3 rounded" id="parny">
+            <p class="text-light">int x = 100 + 50;</p>
+          </div>
+        </div>
+        <div class="row">
+          <h1>Príklad</h1>
+          <div class="col-10 ms-3 mb-3 p-3 rounded" id="parny">
+            <p class="text-light">
+              int sum1 = 100 + 50; // 150 (100 + 50)<br />
+              int sum2 = sum1 + 250; // 400 (150 + 250)<br />
+              int sum3 = sum2 + sum2; // 800 (400 + 400)
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <p>Java rozdeľuje operátorov do nasledujúcich skupín:</p>
+          
+            <div class="table-responsive ">
+              <table class="table table-hover " id="parny" >
+                <thead>
+                  <tr>
+                    <th class="text-light" scope="col " id="parny">#</th>
+                    <th class="text-light" scope="col"  id="parny">Skupina</th>
+                    <th class="text-light" scope="col" id="parny">Operatory</th>
+                  </tr>
+                </thead >
+                <tbody>
+                  <tr>
+                    <th class="text-light" scope="row" id="parny">1</th>
+                    <td class="text-light" id="parny">Aritmeticke</td>
+                    <td class="text-light" id="parny">+, -, *, /, %, ++, --</td>
+                  </tr>
+                  <tr>
+                    <th class="text-light" scope="row" id="parny">2</th>
+                    <td class="text-light" id="parny">Priraďovacie</td>
+                    <td class="text-light" id="parny">=, +=, -=, %=</td>
+                  </tr>
+                  <tr>
+                    <th class="text-light" scope="row" id="parny">3</th>
+                    <td class="text-light" id="parny">Porovnavacie</td>
+                    <td class="text-light" id="parny">==, !=, >, <</td>
+                  </tr>
+                  <tr>
+                    <th class="text-light" scope="row" id="parny">4</th>
+                    <td class="text-light" id="parny">Logicke</td>
+                    <td class="text-light" id="parny">&&, ||, !</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-3" id="tretia">
+      <div class="container-fluid">
+        <div class="row p-5">
+          <div class="col d-flex justify-content-center">
+            <h1 class="text-light">IF-ELSE</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <p class="text-light">
+            Už viete, že Java podporuje obvyklé logické podmienky z matematiky:
+          </p>
+          <div class="container">
+            <ul class="list-group rounded">
+              <li class="list-group-item text-light" id="neparny">
+                Menej ako: a < b
+              </li>
+              <li class="list-group-item text-light" id="neparny">
+                Menšie alebo rovné: a <= b
+              </li>
+              <li class="list-group-item text-light" id="neparny">
+                Väčšie ako: a > b
+              </li>
+              <li class="list-group-item text-light" id="neparny">
+                Väčšie alebo rovné: a >= b
+              </li>
+              <li class="list-group-item text-light" id="neparny">
+                Rovná sa a == b
+              </li>
+              <li class="list-group-item text-light" id="neparny">
+                Nerovná sa: a != b
+              </li>
+            </ul>
+          </div>
+          <p class="text-light p-2">
+            Tieto podmienky môžete použiť na vykonanie rôznych akcií pre rôzne
+            rozhodnutia.
+          </p>
+          <p class="text-light">Java má nasledujúce podmienené príkazy:</p>
+          <div class="container">
+            <ul class="list-group rounded">
+              <li class="list-group-item text-light" id="neparny">
+                Používa sa ifna určenie bloku kódu, ktorý sa má vykonať, ak je
+                zadaná podmienka pravdivá
+              </li>
+              <li class="list-group-item text-light" id="neparny">
+                Použite elsena určenie bloku kódu, ktorý sa má vykonať, ak je
+                rovnaká podmienka nepravdivá
+              </li>
+              <li class="list-group-item text-light" id="neparny">
+                Použite else ifna určenie novej podmienky na testovanie, ak je
+                prvá podmienka nepravdivá
+              </li>
+              <li class="list-group-item text-light" id="neparny">
+                Používa sa switchna zadanie mnohých alternatívnych blokov kódu,
+                ktoré sa majú vykonať
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <h1 class="text-light">Syntax</h1>
+          <div class="col-10 ms-3 mb-3 p-3 rounded text-light" id="neparny">
+            <p class="text-light">
+              if (condition) {<br />
+              // block of code to be executed if the condition is true<br />
+              }
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <h1 class="text-light">Príklad</h1>
+          <div class="col-10 ms-3 mb-3 p-3 rounded" id="neparny">
+            <p class="text-light">
+              int x = 20;<br />
+              int y = 18;<br />
+              if (x > y) {<br />
+              System.out.println("x is greater than y");<br />
+              }
+            </p>
+            <button
+              id="tretia"
+              type="button"
+              class="btn btn-secondary"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              data-bs-content="x is greater than y"
+            >
+              Výstup
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-3" id="parny">
+      <div class="container-fluid">
+        <div class="row p-5">
+          <div class="col d-flex justify-content-center">
+            <h1 class="text-light">FOR CYKLUS</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <p class="text-light">
+            Keď presne viete, koľkokrát chcete prechádzať blokom kódu, použite
+            slučku for:
+          </p>
+        </div>
+        <div class="row">
+          <h1 class="text-light">Syntax</h1>
+          <div class="col-10 ms-3 mb-3 p-3 rounded" id="neparny">
+            <p class="text-light">
+              for (statement 1; statement 2; statement 3) { // code block to be
+              executed }
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <h1 class="text-light">Príklad</h1>
+          <p class="text-light">
+            Tento príklad vytlačí iba párne hodnoty medzi 0 a 10:
+          </p>
+          <div class="col-10 ms-3 mb-3 p-3 rounded" id="neparny">
+            <p class="text-light">
+              for (int i = 0; i <= 10; i = i + 2){<br />
+              System.out.print(i+" ");<br />
+              }
+            </p>
+            <button
+              id="parny"
+              type="button"
+              class="btn btn-secondary"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              data-bs-content="0 2 4 6 8 10"
+            >
+              Výstup
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-3 p-3" id="neparny">
+      <div class="container-fluid">
+        <div class="row p-5">
+          <div class="col d-flex justify-content-center">
+            <h1 class="text-light">ÚLOHY</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="container">
+            <ul class="list-group list-group-flush rounded">
+              <li class="list-group-item text-light" id="parny">
+                1.Vytvorte premennú typu byte, short, int a long. Nastavte im
+                ľubovoľnú hodnotu z ich rozsahu. Premenné vypíšte do konzoly
+              </li>
+              <li class="list-group-item text-light" id="parny">
+                2.Vytvorte program, v ktorom zadeklarujete dve premenné typu
+                int. Pomocou aritmetických operátorov vypočítajte ich súčet,
+                rozdiel, súčin, rozdiel, podiel a zistite aj ich zvyšok po
+                delení. Výsledky vypíšte do konzoly
+              </li>
+              <li class="list-group-item text-light" id="parny">
+                3.Vytvorte program,ktorý načíta pomocou scannera rok narodenia
+                uživateľa. Rok narodenia uložte do premennej rokNarodenia typu
+                int. Pomocou príkazu if else testujte, či má uživateľ viac ako
+                18 rokov. Na testovanie použite súčasný rok.
+              </li>
+              <li class="list-group-item text-light" id="parny">
+                4.Vytvorte program, ktorý spočíta súčet všetkých čísel od 0 do
+                20. Výsledný súčet vypíšte do konzoly.
+              </li>
+              <li class="list-group-item text-light" id="parny">
+                5.Vytvorte program, ktorý z klávesnice načita 5 celých čísel a
+                následno vpíse ich súčet a súčin
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div><h3 class="p-3 text-light">Výsledky</h3></div>
+      <div class="row p-3">
+        <div class="col-lg-1 m-2">
+          <!-- Button trigger modal -->
+          <button
+            id="parny"
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModalone"
+          >
+            Uloha 1
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModalone"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Prva uloha
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    public class Main {<br />
+                    public static void main(String[] args) {<br />
+                    // Vytvorenie premenných<br />
+                    byte myByte = 120;<br />
+                    short myShort = 30000;<br />
+                    int myInt = 2000000000;<br />
+                    long myLong = 9000000000000000000L;<br />
+
+                    // Vypísanie hodnôt do konzoly<br />
+                    System.out.println("Hodnota premennej myByte: " +
+                    myByte);<br />
+                    System.out.println("Hodnota premennej myShort: " +
+                    myShort);<br />
+                    System.out.println("Hodnota premennej myInt: " + myInt);<br />
+                    System.out.println("Hodnota premennej myLong: " +
+                    myLong);<br />
+                    }<br />
+                    }<br />
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Zavrieť
+                  </button>
+                  <button type="button" class="btn btn-primary">Uložit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1 m-2">
+          <!-- Button trigger modal -->
+          <button
+            id="parny"
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModaltwo"
+          >
+            Uloha 2
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModaltwo"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Druhá uloha
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    public class AritmetickeOperatory { <br />
+                    public static void main(String[] args) {<br />
+                    // Deklarácia a inicializácia premenných typu int<br />
+                    int prvocislo = 20;<br />
+                    int druhocislo = 5;<br />
+                    // Výpočet aritmetických operácií<br />
+                    int sucet = prvocislo + druhocislo;<br />
+                    int rozdiel = prvocislo - druhocislo;<br />
+                    int sucin = prvocislo * druhocislo;<br />
+                    int podiel = prvocislo / druhocislo;<br />
+                    int zvysok = prvocislo % druhocislo;<br />
+                    // Výpis výsledkov do konzoly System.out.println("Súčet: " +
+                    sucet);<br />
+                    System.out.println("Rozdiel: " + rozdiel);<br />
+                    System.out.println("Súčin: " + sucin);<br />
+                    System.out.println("Podiel: " + podiel);<br />
+                    System.out.println("Zvyšok po delení: " + zvysok);<br />
+                    } }
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Zavrieť
+                  </button>
+                  <button type="button" class="btn btn-primary">Uložiť</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1 m-2">
+          <!-- Button trigger modal -->
+          <button
+            id="parny"
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModalthree"
+          >
+            Uloha 3
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModalthree"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Uloha tri
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    import java.util.Scanner;<br />
+                    import java.util.Calendar;<br />
+
+                    public class VekovyTest {<br />
+                    public static void main(String[] args) {<br />
+                    // Vytvorenie inštancie Scanner pre načítanie vstupu od
+                    užívateľa<br />
+                    Scanner scanner = new Scanner(System.in);<br />
+
+                    // Načítanie roka narodenia od užívateľa<br />
+                    System.out.println("Zadajte rok narodenia: ");<br />
+                    int rokNarodenia = scanner.nextInt();<br />
+
+                    // Získanie aktuálneho roka<br />
+                    int aktualnyRok =
+                    Calendar.getInstance().get(Calendar.YEAR);<br />
+
+                    // Výpočet veku<br />
+                    int vek = aktualnyRok - rokNarodenia;<br />
+
+                    // Testovanie veku a výpis výsledku<br />
+                    if (vek > 18) {<br />
+                    System.out.println("Máte viac ako 18 rokov.");<br />
+                    } else {<br />
+                    System.out.println("Nemáte ešte 18 rokov.");<br />
+                    }<br />
+
+                    // Zatvorenie scanneru<br />
+                    scanner.close();<br />
+                    } }
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1 m-2">
+          <!-- Button trigger modal -->
+          <button
+            id="parny"
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModalfour"
+          >
+            Uloha 4
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModalfour"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Štvrta úloha
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    public class SucetCisel {<br />
+                    public static void main(String[] args) {<br />
+                    // Inicializácia premennej pre súčet<br />
+                    int sucet = 0;<br />
+
+                    // Cyklus na sčítanie čísel od 0 do 20<br />
+                    for (int i = 0; i <= 20; i++) {<br />
+                    sucet += i;<br />
+                    }<br />
+
+                    // Výpis výsledku do konzoly<br />
+                    System.out.println("Súčet všetkých čísel od 0 do 20 je: " +
+                    sucet);<br />
+                    } }
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Zavrieť
+                  </button>
+                  <button type="button" class="btn btn-primary">Uložiť</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1 m-2">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            id="parny"
+          >
+            Uloha 5
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Uloha 5
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    public class SucetASucin {<br />
+                    public static void main(String[] args) {<br />
+                    // Inicializácia Scanneru pre načítanie vstupu od
+                    užívateľa<br />
+                    Scanner scanner = new Scanner(System.in);<br />
+
+                    // Inicializácia premenných pre súčet a súčin<br />
+                    int sucet = 0;<br />
+                    int sucin = 1; // Počiatočná hodnota pre súčin je 1, aby
+                    nebola nulová hodnota<br />
+
+                    // Načítanie 5 celých čísel od užívateľa<br />
+                    for (int i = 1; i <= 5; i++) {<br />
+                    System.out.println("Zadajte celé číslo č. " + i + ": ");<br />
+                    int cislo = scanner.nextInt();<br />
+
+                    // Sčítanie do súčtu a násobenie do súčinu<br />
+                    sucet += cislo;<br />
+                    sucin *= cislo;<br />
+                    }<br />
+
+                    // Výpis výsledkov do konzoly<br />
+                    System.out.println("Súčet zadaných čísel je: " + sucet);<br />
+                    System.out.println("Súčin zadaných čísel je: " + sucin);<br />
+
+                    // Zatvorenie scanneru<br />
+                    scanner.close();<br />
+                    } }
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Zavrieť
+                  </button>
+                  <button type="button" class="btn btn-primary">Uložiť</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="tretia" class="text-light">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">INFO</h5>
+  
+            <p>
+              Táto stránka bola vytvorená pomocou CSS Framework-u Bootstrap a s menšou pomocou CSS. 
+              
+            </p>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Využite komponenty</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-light">navigacia</a>
+              </li>
+              <li>
+                <a href="#!" class="text-light">popover tlačidlo</a>
+              </li>
+              <li>
+                <a href="#!" class="text-light">modal tlačidlo</a>
+              </li>
+              <li>
+                <a href="#!" class="text-light">grid system</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Info</h5>
+  
+            <p>Na tejto stranke pracoval Dominik Tatarko zo školy SPST SNV z triedy 3.A </p>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        Stranka bola vyrobená 2/1/2024
+        <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!--Javascript-->
+    <script src="js/bootstrap.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const navbarToggler = document.querySelector(".navbar-toggler");
+      const navbarCollapse = document.querySelector(".navbar-collapse");
+
+      let isNavbarOpen = eval(navbarToggler.getAttribute("aria-expanded"));
+      let navInterval;
+
+      navbarToggler.addEventListener("click", () => {
+        isNavbarOpen = !isNavbarOpen;
+        if (isNavbarOpen && navInterval) clearInterval(navInterval);
+        navbarToggler.setAttribute("aria-expanded", isNavbarOpen);
+        if (!isNavbarOpen)
+          navInterval = setInterval(
+            () => navbarCollapse.classList.remove("show"),
+            10
+          );
+      });
+
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
+    </script>
+  </body>
+</html>
